@@ -1,24 +1,28 @@
-# Hi there, I'm Muhammad Danish Tehseen! 👋
+# Muhammad Danish Tehseen
 
-I am a Ph.D. Researcher in Electrical Engineering at KAIST, specializing in **energy-efficient AI systems**, **Agentic AI**, and **computational storage architectures**. My core focus is bridging the gap between hardware efficiency and complex machine learning workloads. 
+PhD in Electrical Engineering from KAIST (2026). I build efficient AI systems, from LLM agent serving down to storage and embedded hardware.
 
-Whether I am optimizing GPU utilization for LLM-based agent frameworks or deploying custom CNNs directly onto storage devices, I love building systems that are both fast and resourceful.
+## Research
 
-### 🔭 What I'm currently working on:
-* **Agentic System Optimization:** Researching and developing techniques to improve hardware utilization and execution efficiency in LLM-based agentic workflows.
-* **Autonomous Driving Simulation:** Building a portfolio project integrating **CARLA** with LLMs.
-* **Continuous Learning:** Deepening my practical AI stack through a dedicated LLM Engineering course and building UI apps with **Gradio** and **Ollama**.
-* **Open Source:** Actively contributing to community projects.
+### ATCP, adaptive tool-aware concurrency for LLM agents
+*MLSys 2027, under review, first author*
 
-### 🛠️ Tech Stack & Tools:
-* **Languages:** Python, C++, C, C#
-* **AI & Machine Learning:** PyTorch, VLLM, Darknet, OpenCV
-* **Systems & Hardware:** Linux Kernel, NVMe, FPGA/Computational SSDs
-* **Frameworks & Tools:** ReAct, Reflexion, Git, Cursor IDE, MATLAB
+Middleware on top of unmodified vLLM that overlaps LLM inference with tool execution across agent sessions. Compared with sequential LLMCompiler, it gives 12–19x higher throughput and 11.7–18.8x lower energy per query, with accuracy within 0.5 percentage points.
 
-### 📫 Let's Connect:
-* **LinkedIn:** https://www.linkedin.com/in/mdanishtehseen/
+### SeeSSD, computational storage for real-time object detection
+*[ACM TECS 2026](https://doi.org/10.1145/3774649), first author*
 
+An FPGA-based computational SSD that runs a 9-layer CNN (YOLO_Embed, quantized to 16-bit fixed point) inside the drive. It moves 24x less data and uses 1.2–1.4x less power than CPU and GPU systems.
 
----
-*"Building efficient AI systems: from computational storage to agent optimization."*
+### IPLFS, a log-structured file system without garbage collection
+*[USENIX ATC 2022](https://www.usenix.org/conference/atc22/presentation/kim-juwon), co-author*
+
+I co-developed interval mapping for space-efficient LBA-to-PBA translation. IPLFS runs up to 12.8x (FIO) and 3.73x (MySQL YCSB-A) faster than F2FS.
+
+## Tools
+
+Python · C · C++ · PyTorch · vLLM · Hugging Face · OpenCV · Darknet · Linux kernel · NVMe · FPGA · Docker · Git
+
+## Links
+
+[Website](https://mdanishtehseen.github.io) · [LinkedIn](https://www.linkedin.com/in/mdanishtehseen)
